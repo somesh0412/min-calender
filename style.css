@@ -6,9 +6,11 @@
 }
 
 .box{
-    width: 100pc;
+    width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(45deg, #1d0000, #20205b);
+    background: linear-gradient(75deg, #1d0000, #20205b);
+    background-size: 100% 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,8 +49,8 @@
 #date{
     font-size: 50px;
 }
-@media screen and (max-width:800px) {
-    .left, .right{
-        width: 100pc;
+@media  (max-width:600px) {
+    .box{
+        hight: 100vh;
     }
 }
